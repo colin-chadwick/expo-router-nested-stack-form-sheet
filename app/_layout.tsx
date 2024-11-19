@@ -6,7 +6,11 @@ export default function RootLayout() {
       <Stack.Screen name="index" />
       <Stack.Screen
         name="sheet"
-        options={{ presentation: "formSheet", headerShown: false }}
+        options={{
+          presentation:
+            "formSheet" /* This works and shows the nested stack if set to "modal" */,
+          headerShown: false,
+        }}
       />
     </Stack>
   );
